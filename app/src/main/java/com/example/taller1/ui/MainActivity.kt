@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_CATEGORY = "categoria_seleccionada"
         val favorites = mutableListOf<com.example.taller1.model.Destination>()
+
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupSpinner() {
-        val categories = listOf("Todos", "Playa", "Montaña", "Ciudad", "Histórico", "Aventura")
+        val categories = listOf("Todos", "Playas", "Montañas", "Ciudades Históricas", "Selvas", "Maravillas del Mundo")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.SpinnerDestinos.adapter = adapter

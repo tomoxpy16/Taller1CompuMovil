@@ -15,7 +15,7 @@ class DestinationsListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDestinationsListBinding
 
     companion object {
-        const val EXTRA_CATEGORY = "extra_category"
+        const val EXTRA_CATEGORY = "categoria_seleccionada"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
